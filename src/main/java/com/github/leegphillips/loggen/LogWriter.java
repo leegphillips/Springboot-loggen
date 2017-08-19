@@ -6,7 +6,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LogWriter {
+class LogWriter {
     private static final Log logger = LogFactory.getLog(LogWriter.class);
 
     @Scheduled(fixedDelay = 100)
