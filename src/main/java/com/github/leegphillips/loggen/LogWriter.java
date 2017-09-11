@@ -10,7 +10,7 @@ class LogWriter {
     private static final Log logger = LogFactory.getLog(LogWriter.class);
 
     @Scheduled(fixedDelay = 100)
-    public void scan() throws InterruptedException {
-        logger.info(new Throwable());
+    public void scan() throws Throwable {
+        throw new Throwable();
     }
 }
